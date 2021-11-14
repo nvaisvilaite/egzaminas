@@ -459,41 +459,109 @@
     padding-bottom: 122px; }
 
 .pricing {
-  background-color: #6696E2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  .pricing .alllist {
-    margin: 0 auto; }
-    .pricing .alllist .headingfullpricing {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+  background: #6696E2;
+  padding-top: 99px;
+  padding-bottom: 107px; }
+  .pricing .headingfull {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .pricing .headingfull h2 {
+      font-size: 32px;
+      line-height: 43px;
+      color: #fff;
+      font-family: Montserrat; }
+    .pricing .headingfull p {
+      font-family: Montserrat;
+      font-size: 14px;
+      line-height: 20px;
+      color: #ffffff;
+      opacity: 0.6; }
+    .pricing .headingfull .headlineborder {
+      background-image: url("content/greenline.svg");
+      margin-top: 21px;
+      height: 2px;
+      width: 64px;
+      margin-bottom: 27px; }
+  .pricing .pricelist {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: end;
+    padding-top: 84px; }
+    .pricing .pricelist .firstbasic {
       display: flex;
-      justify-content: center;
       flex-direction: column;
-      align-items: center; }
-      .pricing .alllist .headingfullpricing h2 {
-        font-size: 36px;
-        line-height: 43px;
+      justify-content: center;
+      align-items: center;
+      width: 33.3333%;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .pricing .pricelist .firstbasic .basicborder {
+        background-image: url("content/basicborder.svg");
+        width: 343px;
+        height: 6px; }
+      .pricing .pricelist .firstbasic .basichead {
+        background: #303030;
+        height: 210px;
+        width: 343px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+        .pricing .pricelist .firstbasic .basichead p {
+          font-size: 14px;
+          line-height: 24px;
+          font-family: Montserrat;
+          color: #ffffff;
+          opacity: 0.5; }
+        .pricing .pricelist .firstbasic .basichead h3 {
+          font-size: 20px;
+          line-height: 24px;
+          font-family: Montserrat;
+          color: #ffffff;
+          font-weight: 100; }
+        .pricing .pricelist .firstbasic .basichead .pricetag {
+          display: flex;
+          margin-top: 16px; }
+          .pricing .pricelist .firstbasic .basichead .pricetag h1 {
+            font-size: 70px;
+            line-height: 24px;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-weight: 100; }
+          .pricing .pricelist .firstbasic .basichead .pricetag h2 {
+            font-size: 40px;
+            font-family: Montserrat;
+            color: white; }
+      .pricing .pricelist .firstbasic .basiclist {
+        text-align: center;
+        margin-bottom: auto;
         font-family: Montserrat;
-        color: white;
-        padding-bottom: 21px; }
-      .pricing .alllist .headingfullpricing .headlineborder {
-        background-image: url("content/greenline.svg");
-        width: 64px;
-        height: 2px; }
-      .pricing .alllist .headingfullpricing p {
-        font-size: 14px;
-        line-height: 20px;
-        font-family: Montserrat;
-        color: #ffffff;
-        padding-top: 27px;
-        opacity: 0.7; }
-    .pricing .alllist .pricinglist {
-      display: flex;
-      justify-content: center; }
+        border-bottom: 2px solid white;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px; }
+        .pricing .pricelist .firstbasic .basiclist p {
+          background: white;
+          padding-top: 11px;
+          padding-bottom: 11px;
+          font-family: Montserrat;
+          text-transform: uppercase;
+          background: white;
+          padding-left: 72px;
+          padding-right: 72px;
+          color: #86878B;
+          font-size: 14px; }
+        .pricing .pricelist .firstbasic .basiclist .colored {
+          background: #41D395;
+          color: white; }
 
 .container {
   display: flex;

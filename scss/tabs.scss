@@ -1,0 +1,145 @@
+.tabsblock {
+    background-image: linear-gradient(to bottom, #6696e287, #e2786680), url("content/tabner.png");
+  align-items: center;
+  display: flex;
+  background-size:cover;
+  background-repeat: no-repeat;
+
+
+  .leftsidedblock {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .miniblocks {
+        margin-right: 50px;
+
+        .turned {
+          padding-right: 25px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 38px;
+          transform: rotate(317deg);
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+      .registerb {
+        background-image: url("content/registerb.png");
+        width: 100px;
+        height: 100px;
+      }
+
+      .applyb {
+        background-image: url("content/applyb.png");
+        width: 100px;
+        height: 100px;
+      }
+      .receiveb {
+        background-image: url("content/applyb.png");
+        width: 100px;
+        height: 100px;
+      }
+
+      .tab {
+        margin-bottom: 21px;
+      }
+
+      .tab:nth-of-type(3){
+        margin-bottom: 0px;
+      }
+    }
+
+    .headertext {
+      font-size: 36px;
+      font-family: Montserrat;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    .paragraph {
+        padding-top: 33px;
+        color: #FFFFFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        opacity: 0.7;
+    }
+
+    .texttabs {
+
+    }
+  }
+
+  .rigthsidedblock {
+    width: 40%;
+    padding-left: 30px;
+
+    .threeimg {
+
+      .first {
+        background-image: url("content/leaves.png");
+
+        width: 100%;
+        height: 168px;
+        background-repeat: no-repeat;
+        position: relative;
+
+        .layer {
+          background-color: rgba(226, 120, 102, 0.8);
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          .word {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 71px;
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+
+}
+      }
+      .second {
+        background-image: url("content/food.png");
+        box-shadow: 11px 12px 6px #00000012;
+        width: 100%;
+        height: 168px;
+        background-repeat: no-repeat;
+        margin-left: 20px;
+      }
+
+      .third {
+        background-image: url("content/shoes.png");
+      box-shadow: 11px 12px 6px #00000012;
+        width: 100%;
+        height: 177px;
+        background-repeat: no-repeat;
+      }
+
+      .topimg {
+        display: flex;
+
+      }
+
+      .bottomimg {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  .tabssize {
+    display: flex;
+    padding-top: 110px;
+    padding-bottom: 115px;
+
+  }
+}

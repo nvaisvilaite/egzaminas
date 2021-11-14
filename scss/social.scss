@@ -1,0 +1,66 @@
+.smblock {
+  background: #FFFFFF;
+
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  .smtext {
+    width:40%;
+
+    .social {
+      color: #333333;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+
+    .socialp {
+      color: #86878B;
+      font-family: Montserrat;
+      font-size: 14px;
+
+    }
+  }
+
+  .iconsblock {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-left: 130px;
+    align-items: center;
+
+    .iconf {
+      background-image: url("content/facebook-logo.svg");
+      width: 36px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+
+    .iconi {
+      background-image: url("content/instagram-logo.svg");
+      width: 36px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+
+    .icont {
+      background-image: url("content/twitter.svg");
+      width: 36px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+
+    .iconp {
+      background-image: url("content/pinterest.svg");
+      width: 36px;
+      height: 30px;
+      background-repeat: no-repeat;
+    }
+
+    .icon {
+
+    }
+  }
+}

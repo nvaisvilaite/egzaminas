@@ -1,0 +1,200 @@
+.bannerblock {
+  background-image: url("content/banner.png");
+  padding-bottom: 131px;
+  padding-top: 77px;
+  display: flex;
+  background-size:cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+
+  .textblock {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+
+
+    .bannerh {
+      font-size: 36px;
+      font-family: Montserrat;
+      font-weight: 800;
+      padding-bottom: 21px;
+      color: white;
+    }
+
+    .borderbanner {
+      padding-top: 10.5px;
+      background-image: url("content/bannerline.png");
+      width: 84px;
+      height: 22px;
+      background-repeat: no-repeat;
+    }
+    .contentimglog{
+      background-image: url("content/bannerlogo.svg");
+      background-repeat: no-repeat;
+      width: 246.74px;
+      height: 107.61px;
+      padding-bottom: 127.63px;
+
+    }
+
+    .bannerp {
+      padding-top: 21px;
+      font-size: 16px;
+      text-align: left;
+      color: white;
+      font-family: Montserrat;
+      letter-spacing: 0.5px;
+      opacity: 0.8;
+      line-height: 2px;
+      line-height: 19px;
+      padding-bottom: 43px;
+    }
+
+    .button {
+    color: white;
+    border: 2px solid white;
+    width: 135px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 600;
+    }
+  }
+.formside {
+  justify-content: center;
+    display: flex;
+    align-items: center;
+  .fullform {
+    width: 360px;
+    background: white;
+    margin-left: 90px;
+    border-radius: 5px;
+
+
+    .fullformh {
+      background: #F5F5F5;
+      padding-top: 17px;
+      padding-bottom: 16px;
+      border-radius: 5px;
+      font-size: 20px;
+      color: #333333;
+      text-align: center;
+      font-family: Montserrat;
+    }
+.fullformh3 {
+  padding-top: 30px;
+  padding-bottom: 22px;
+  padding-left: 51px;
+  color: #1C1C1C;
+  font-family: Montserrat;
+  font-family: 16px;
+}
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 51px;
+    padding-right: 51px;
+
+    input {
+      padding-top: 10px;
+      padding-bottom: 4.5px;
+      border: none;
+      border-bottom: 1px solid #D8D8D8;
+      opacity: 0.5;
+      font-family: Montserrat;
+      font-size: 12px;
+
+    }
+  }
+
+  .typing {
+    padding-top: 30px;
+    padding-left: 51px;
+    color: #1C1C1C;
+    font-family: Montserrat;
+    font-family: 16px;
+  }
+}
+
+.custom-radio {
+  display: inline-block;
+  margin: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+label {
+  opacity: 0.6;
+  transition: 0.3s;
+  font-size: 9px;
+  text-transform: uppercase;
+  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="radio"]:checked + label {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.check {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: 2px solid #41D395;
+}
+
+.check:before {
+  position: absolute;
+  content:"";
+  width: 7px;
+  height: 7px;
+  background: #41D395;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s;
+}
+input[type="radio"]:checked + label .check:before{
+transform: scale(1);
+}
+
+.bottomform {
+  padding-bottom: 42px;
+  padding-left: 40px;
+
+  #monthly {
+    font-family: Montserrat;
+
+  }
+
+  #yearly {
+    font-family: Montserrat;
+
+  }
+}
+
+.getstartedbtn {
+  background: #41D395;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+}

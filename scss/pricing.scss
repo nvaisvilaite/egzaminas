@@ -1,0 +1,48 @@
+.pricing {
+  background-color: #6696E2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .alllist {
+
+    margin: 0 auto;
+    .headingfullpricing  {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 36px;
+        line-height: 43px;
+        font-family: Montserrat;
+        color: white;
+        padding-bottom: 21px;
+      }
+
+      .headlineborder {
+        background-image: url("content/greenline.svg");
+        width: 64px;
+        height: 2px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: Montserrat;
+        color: #ffffff;
+        padding-top: 27px;
+        opacity: 0.7;
+      }
+  }
+    .pricinglist {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  }

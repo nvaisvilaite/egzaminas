@@ -1,0 +1,19 @@
+@import "menu.scss";
+@import "media.scss";
+@import "banner.scss";
+@import "reset.scss";
+@import "social.scss";
+@import "tabs.scss";
+@import "logobanner.scss";
+@import "threerows.scss";
+@import "pricing.scss";
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 147px;
+  padding-right: 147px;
+
+}

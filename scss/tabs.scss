@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
       padding-top: 110px;
     padding-bottom: 115px;
+    overflow:hidden;
 
 
   .leftsidedblock {
@@ -18,31 +19,80 @@
         margin-right: 55px;
 
         .turned {
-          padding-right: 25px;
+
           color: white;
           display: flex;
           justify-content: center;
           align-items: center;
-          padding-top: 38px;
           transform: rotate(317deg);
           font-size: 16px;
           text-transform: uppercase;
+          opacity: 0.5;
+          width: 100%;
+          height: 100%;
+        }
+
+        .turned:hover {
+          opacity: 1;
         }
       .registerb {
-        background-image: url("content/registerb.png");
+        background: #A37169;
         width: 100px;
         height: 100px;
+        cursor: pointer;
+      }
+
+      .tab {
+
+        &.active {
+          background-color:#E27866;
+          box-shadow: 4px 5px 9px 0px #00000033;
+          p {
+            color:white;
+            opacity:1;
+          }
+        }
+
+        background-color:#A37169;
+        box-shadow: 4px 5px 9px 0px #00000012;
+        transition: 0.5s;
+        &:hover {
+          background-color:#E27866;
+          box-shadow: 4px 5px 9px 0px #00000033;
+          p {
+            opacity:1;
+
+          }
+        }
+
+        p:hover {
+          opacity:1;
+        }
+      }
+
+      .registerb:hover {
+        background: #E27866;
       }
 
       .applyb {
-        background-image: url("content/applyb.png");
+        background: #A37169;
         width: 100px;
         height: 100px;
+        cursor: pointer;
+      }
+
+      .applyb:hover {
+        background: #E27866;
       }
       .receiveb {
-        background-image: url("content/applyb.png");
+        background: #A37169;
         width: 100px;
         height: 100px;
+        cursor: pointer;
+      }
+
+      .receiveb:hover {
+        background: #E27866;
       }
 
       .tab {
@@ -66,7 +116,7 @@
         color: #FFFFFF;
         font-family: Montserrat;
         font-size: 14px;
-        opacity: 0.7;
+        font-weight: 300;
     }
 
     .texttabs {
@@ -78,23 +128,18 @@
     width: 40%;
     padding-left: 30px;
 
-    .threeimg {
+    .topimg {
 
-      .first {
-        background-image: url("content/leaves.png");
+    }
 
-        width: 100%;
-        height: 168px;
-        background-repeat: no-repeat;
-        position: relative;
-
-        .layer {
-          background-color: rgba(226, 120, 102, 0.8);
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+    .layer {
+      background-color: rgba(226, 120, 102, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor:pointer;
 
           .word {
             color: white;
@@ -106,11 +151,38 @@
             text-transform: uppercase;
           }
 
-}
+    }
+
+    .layer {
+      visibility:hidden;
+    }
+
+    .img {
+      position:relative;
+      background-size:cover;
+    }
+
+    .img:hover {
+      .layer {
+        visibility:visible;
+      }
+    }
+
+    .threeimg {
+
+      .first {
+        background-image: url("content/leaves.png");
+
+        width: 100%;
+        height: 168px;
+        background-repeat: no-repeat;
+        position: relative;
+
+
       }
       .second {
         background-image: url("content/food.png");
-        box-shadow: 11px 12px 6px #00000012;
+        box-shadow: -10px -20px 20px #00000012;
         width: 100%;
         height: 168px;
         background-repeat: no-repeat;
@@ -119,7 +191,7 @@
 
       .third {
         background-image: url("content/shoes.png");
-      box-shadow: 11px 12px 6px #00000012;
+        box-shadow: -12px 11px 20px #00000012;
         width: 100%;
         height: 177px;
         background-repeat: no-repeat;

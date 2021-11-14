@@ -18,6 +18,7 @@
 
   .reviews-items {
     margin-top:50px;
+    padding-bottom: 130px;
     .container {
       align-items:end;
     }
@@ -98,9 +99,23 @@
 
   }
 
+}
 
-  
-  
+@media(max-width:768px) {
+  .reviews-items .container {
+    flex-direction:column;
+  }
 
+  .reviews-items .container > div {
+    width:100%;
+  }
 
+  .reviews-block .firstbasic {
+    padding-left:0px;
+    padding-right:0px;
+    max-width:360px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+  }
 }

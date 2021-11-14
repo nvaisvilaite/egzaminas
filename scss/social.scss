@@ -3,7 +3,7 @@
 
   &.footer {
     background-color:#1C1C1C;
-   
+
 
 
 
@@ -71,8 +71,13 @@
       background-size:contain;
       background-position:center;
       display:inline-block;
+      transition: 0.5s;
     }
-  
+
+    .icon:hover {
+        opacity: 0.5;
+    }
+
 
     .iconf {
       background-image: url("content/facebook-logo.svg");
@@ -90,10 +95,10 @@
     .iconp {
       background-image: url("content/pinterest.svg");
 
-      
+
     }
 
-    
+
   }
 }
 
@@ -103,9 +108,22 @@
   .smblock {
     padding-top:50px;
     padding-bottom:50px;
+
+    &.footer {
+      .iconsblock {
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .smtext {
+        margin-top:20px;
+        text-align:center;
+        justify-content: center;
+      }
+    }
   }
 
-  
+
   .smblock .container {
     flex-direction:column;
   }

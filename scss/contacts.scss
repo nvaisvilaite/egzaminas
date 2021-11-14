@@ -2,6 +2,27 @@
 	background-image:none;
 	background-color:#E27866;
 	box-shadow:none;
+	flex-direction: column;
+
+	.contactheading {
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 27px;
+
+		h1 {
+			padding-bottom: 50px;
+			text-transform: uppercase;
+			font-size: 36px;
+			color: white;
+		}
+
+		p {
+			font-size: 14px;
+			color: white;
+			font-weight: 100;
+
+		}
+	}
 
 	.formside {
 		width:100%;

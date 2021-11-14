@@ -30,7 +30,10 @@ html, body, * {
     padding-top: 8px;
     padding-bottom: 8px; }
     .top-menu-block .top-menu .menuimg a {
-      display: inline-block; }
+      display: inline-block;
+      transition: 0.5s; }
+    .top-menu-block .top-menu .menuimg a:hover {
+      opacity: 0.8; }
     .top-menu-block .top-menu .menuimg img {
       height: 52px; }
     .top-menu-block .top-menu .navmenu {
@@ -126,7 +129,10 @@ html, body, * {
       font-size: 13px;
       text-transform: uppercase;
       font-weight: 600;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: 0.5s; }
+    .bannerblock .textblock .button:hover {
+      opacity: 0.7; }
   .bannerblock .formside {
     justify-content: center;
     display: flex;
@@ -145,7 +151,8 @@ html, body, * {
         color: #333333;
         text-align: left;
         padding-left: 52px;
-        padding-right: 12px; }
+        padding-right: 12px;
+        box-shadow: -6px 20px 15px #00000012; }
       .bannerblock .formside .fullform .fullformh3 {
         padding-top: 30px;
         color: #1C1C1C;
@@ -287,7 +294,10 @@ html, body, * {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      display: inline-block; }
+      display: inline-block;
+      transition: 0.5s; }
+    .smblock .iconsblock .icon:hover {
+      opacity: 0.5; }
     .smblock .iconsblock .iconf {
       background-image: url("content/facebook-logo.svg"); }
     .smblock .iconsblock .iconi {
@@ -301,6 +311,13 @@ html, body, * {
   .smblock {
     padding-top: 50px;
     padding-bottom: 50px; }
+    .smblock.footer .iconsblock {
+      margin-left: auto;
+      margin-right: auto; }
+    .smblock.footer .smtext {
+      margin-top: 20px;
+      text-align: center;
+      justify-content: center; }
   .smblock .container {
     flex-direction: column; }
   .smblock .iconsblock {
@@ -315,7 +332,8 @@ html, body, * {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 110px;
-  padding-bottom: 115px; }
+  padding-bottom: 115px;
+  overflow: hidden; }
   .tabsblock .leftsidedblock {
     width: 70%;
     display: flex;
@@ -324,27 +342,56 @@ html, body, * {
     .tabsblock .leftsidedblock .miniblocks {
       margin-right: 55px; }
       .tabsblock .leftsidedblock .miniblocks .turned {
-        padding-right: 25px;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 38px;
         transform: rotate(317deg);
         font-size: 16px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%; }
+      .tabsblock .leftsidedblock .miniblocks .turned:hover {
+        opacity: 1; }
       .tabsblock .leftsidedblock .miniblocks .registerb {
-        background-image: url("content/registerb.png");
+        background: #A37169;
         width: 100px;
-        height: 100px; }
+        height: 100px;
+        cursor: pointer; }
+      .tabsblock .leftsidedblock .miniblocks .tab {
+        background-color: #A37169;
+        box-shadow: 4px 5px 9px 0px #00000012;
+        transition: 0.5s; }
+        .tabsblock .leftsidedblock .miniblocks .tab.active {
+          background-color: #E27866;
+          box-shadow: 4px 5px 9px 0px #00000033; }
+          .tabsblock .leftsidedblock .miniblocks .tab.active p {
+            color: white;
+            opacity: 1; }
+        .tabsblock .leftsidedblock .miniblocks .tab:hover {
+          background-color: #E27866;
+          box-shadow: 4px 5px 9px 0px #00000033; }
+          .tabsblock .leftsidedblock .miniblocks .tab:hover p {
+            opacity: 1; }
+        .tabsblock .leftsidedblock .miniblocks .tab p:hover {
+          opacity: 1; }
+      .tabsblock .leftsidedblock .miniblocks .registerb:hover {
+        background: #E27866; }
       .tabsblock .leftsidedblock .miniblocks .applyb {
-        background-image: url("content/applyb.png");
+        background: #A37169;
         width: 100px;
-        height: 100px; }
+        height: 100px;
+        cursor: pointer; }
+      .tabsblock .leftsidedblock .miniblocks .applyb:hover {
+        background: #E27866; }
       .tabsblock .leftsidedblock .miniblocks .receiveb {
-        background-image: url("content/applyb.png");
+        background: #A37169;
         width: 100px;
-        height: 100px; }
+        height: 100px;
+        cursor: pointer; }
+      .tabsblock .leftsidedblock .miniblocks .receiveb:hover {
+        background: #E27866; }
       .tabsblock .leftsidedblock .miniblocks .tab {
         margin-bottom: 21px; }
       .tabsblock .leftsidedblock .miniblocks .tab:nth-of-type(3) {
@@ -359,41 +406,49 @@ html, body, * {
       color: #FFFFFF;
       font-family: Montserrat;
       font-size: 14px;
-      opacity: 0.7; }
+      font-weight: 300; }
   .tabsblock .rigthsidedblock {
     width: 40%;
     padding-left: 30px; }
+    .tabsblock .rigthsidedblock .layer {
+      background-color: rgba(226, 120, 102, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer; }
+      .tabsblock .rigthsidedblock .layer .word {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 71px;
+        font-size: 20px;
+        text-transform: uppercase; }
+    .tabsblock .rigthsidedblock .layer {
+      visibility: hidden; }
+    .tabsblock .rigthsidedblock .img {
+      position: relative;
+      background-size: cover; }
+    .tabsblock .rigthsidedblock .img:hover .layer {
+      visibility: visible; }
     .tabsblock .rigthsidedblock .threeimg .first {
       background-image: url("content/leaves.png");
       width: 100%;
       height: 168px;
       background-repeat: no-repeat;
       position: relative; }
-      .tabsblock .rigthsidedblock .threeimg .first .layer {
-        background-color: rgba(226, 120, 102, 0.8);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%; }
-        .tabsblock .rigthsidedblock .threeimg .first .layer .word {
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding-top: 71px;
-          font-size: 20px;
-          text-transform: uppercase; }
     .tabsblock .rigthsidedblock .threeimg .second {
       background-image: url("content/food.png");
-      box-shadow: 11px 12px 6px #00000012;
+      box-shadow: -10px -20px 20px #00000012;
       width: 100%;
       height: 168px;
       background-repeat: no-repeat;
       margin-left: 20px; }
     .tabsblock .rigthsidedblock .threeimg .third {
       background-image: url("content/shoes.png");
-      box-shadow: 11px 12px 6px #00000012;
+      box-shadow: -12px 11px 20px #00000012;
       width: 100%;
       height: 177px;
       background-repeat: no-repeat; }
@@ -621,7 +676,8 @@ html, body, * {
       padding-right: 20px;
       width: 100%; }
       .pricing .pricelist .firstbasic .content {
-        width: 100%; }
+        width: 100%;
+        box-shadow: 12px 15px 12px 0px #00000012; }
       .pricing .pricelist .firstbasic .basicborder {
         background-image: url("content/basicborder.svg");
         width: 100%;
@@ -679,7 +735,11 @@ html, body, * {
           color: #86878B;
           font-size: 14px;
           padding-left: 10px;
-          padding-right: 10px; }
+          padding-right: 10px;
+          transition: 0.2s; }
+        .pricing .pricelist .firstbasic .basiclist p:hover {
+          background: #41D395;
+          color: white; }
         .pricing .pricelist .firstbasic .basiclist .colored {
           background: #41D395;
           color: white; }
@@ -704,7 +764,8 @@ html, body, * {
       width: 64px;
       margin: 0 auto; }
   .reviews-block .reviews-items {
-    margin-top: 50px; }
+    margin-top: 50px;
+    padding-bottom: 130px; }
     .reviews-block .reviews-items .container {
       align-items: end; }
   .reviews-block .firstbasic {
@@ -759,10 +820,37 @@ html, body, * {
       align-items: end;
       padding-bottom: 152px; }
 
+@media (max-width: 768px) {
+  .reviews-items .container {
+    flex-direction: column; }
+  .reviews-items .container > div {
+    width: 100%; }
+  .reviews-block .firstbasic {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; } }
+
 .contacts.bannerblock {
   background-image: none;
   background-color: #E27866;
-  box-shadow: none; }
+  box-shadow: none;
+  flex-direction: column; }
+  .contacts.bannerblock .contactheading {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 27px; }
+    .contacts.bannerblock .contactheading h1 {
+      padding-bottom: 50px;
+      text-transform: uppercase;
+      font-size: 36px;
+      color: white; }
+    .contacts.bannerblock .contactheading p {
+      font-size: 14px;
+      color: white;
+      font-weight: 100; }
   .contacts.bannerblock .formside {
     width: 100%; }
     .contacts.bannerblock .formside .fullform {

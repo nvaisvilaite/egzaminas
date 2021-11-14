@@ -15,6 +15,11 @@
     .menuimg {
        a {
         display:inline-block;
+        transition: 0.5s;
+       }
+
+       a:hover {
+         opacity: 0.8;
        }
 
        img {
@@ -53,7 +58,7 @@
                     padding-bottom: 24px;
                   }
               }
-              
+
         }
       }
     }

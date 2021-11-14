@@ -1,15 +1,43 @@
 .smblock {
-  background: #FFFFFF;
 
-  padding-top: 19px;
-  padding-bottom: 19px;
+
+  &.footer {
+    background-color:#1C1C1C;
+   
+
+
+
+    .iconsblock {
+      margin-left:0px;
+      width:70%;
+      max-width:650px;
+      .icon {
+        width:24px;
+        height:24px;
+      }
+    }
+
+    .smtext {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: right;
+      justify-content: right;
+      .socialp {
+        font-size:18px;
+      }
+    }
+
+  }
+
+  background: #FFFFFF;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   .smtext {
-    width:40%;
 
     .social {
       color: #333333;
-      font-family: Montserrat;
       font-size: 20px;
       font-weight: bold;
       padding-bottom: 5px;
@@ -17,50 +45,74 @@
 
     .socialp {
       color: #86878B;
-      font-family: Montserrat;
+      line-height:1.45;
       font-size: 14px;
 
     }
   }
 
   .iconsblock {
-    width: 60%;
+    width: 83%;
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    padding-left: 130px;
+    margin-left:10%;
     align-items: center;
+    margin-top:5px;
 
-    .iconf {
-      background-image: url("content/facebook-logo.svg");
+    a {
+      display:inline-block;
+    }
+
+    .icon {
       width: 36px;
       height: 30px;
       background-repeat: no-repeat;
+      background-size:contain;
+      background-position:center;
+      display:inline-block;
+    }
+  
+
+    .iconf {
+      background-image: url("content/facebook-logo.svg");
     }
 
     .iconi {
       background-image: url("content/instagram-logo.svg");
-      width: 36px;
-      height: 30px;
-      background-repeat: no-repeat;
     }
 
     .icont {
       background-image: url("content/twitter.svg");
-      width: 36px;
-      height: 30px;
-      background-repeat: no-repeat;
+
     }
 
     .iconp {
       background-image: url("content/pinterest.svg");
-      width: 36px;
-      height: 30px;
-      background-repeat: no-repeat;
+
+      
     }
 
-    .icon {
+    
+  }
+}
 
-    }
+
+
+@media (max-width:768px) {
+  .smblock {
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+
+  
+  .smblock .container {
+    flex-direction:column;
+  }
+
+  .smblock .iconsblock {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
   }
 }

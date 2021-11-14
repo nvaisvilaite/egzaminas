@@ -41,26 +41,31 @@ padding-bottom: 107px;
         margin: auto;
         align-items: end;
         padding-top: 84px;
+        width:100%;
 
         .firstbasic {
           display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 33.3333%;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left:20px;
+            padding-right:20px;
+            width:100%;
+
+            .content {
+              width:100%;
+            }
 
             .basicborder {
               background-image: url("content/basicborder.svg");
-              width: 343px;
+              width:100%;
               height: 6px;
             }
 
             .basichead {
                 background: #303030;
                 height: 210px;
-                width: 343px;
+                width:100%;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
@@ -120,10 +125,10 @@ padding-bottom: 107px;
                   font-family: Montserrat;
                   text-transform: uppercase;
                   background: white;
-                  padding-left: 72px;
-                  padding-right: 72px;
                   color: #86878B;
                   font-size: 14px;
+                  padding-left:10px;
+                  padding-right:10px;
 
 
               }
@@ -138,3 +143,15 @@ padding-bottom: 107px;
 
 
     }
+
+
+
+@media(max-width:768px) {
+  .pricelist {
+    flex-direction:column;
+  }
+
+  .pricelist > div {
+    margin-bottom:20px;
+  }
+}

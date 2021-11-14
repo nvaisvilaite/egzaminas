@@ -89,6 +89,23 @@ padding-bottom: 122px;
 
         .full {
           padding-top: 99px;
-    padding-bottom: 122px;
+    
         }
     }
+
+
+
+@media(max-width:768px) {
+  .all {
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+  
+  .all .people {
+    flex-direction:column;
+  }
+
+  .all .people .person {
+    width:100%;
+  }
+}

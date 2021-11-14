@@ -4,6 +4,8 @@
   display: flex;
   background-size:cover;
   background-repeat: no-repeat;
+      padding-top: 110px;
+    padding-bottom: 115px;
 
 
   .leftsidedblock {
@@ -13,7 +15,7 @@
     align-items: center;
 
     .miniblocks {
-        margin-right: 50px;
+        margin-right: 55px;
 
         .turned {
           padding-right: 25px;
@@ -138,8 +140,43 @@
 
   .tabssize {
     display: flex;
-    padding-top: 110px;
-    padding-bottom: 115px;
+  }
+}
 
+
+
+@media (max-width:768px) {
+
+  .tabsblock {
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+
+  .tabsblock .container {
+    flex-direction:column;
+  }
+
+  .tabsblock .leftsidedblock, .tabsblock .rigthsidedblock {
+    width:100%;
+  }
+
+  .tabsblock .leftsidedblock {
+    flex-direction:column;
+  }
+
+  .tabsblock .leftsidedblock .miniblocks {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+  }
+
+  .tabsblock .leftsidedblock, .tabsblock .rigthsidedblock {
+    padding-left:0px;
+    margin-top:50px;
+  }
+
+  .tabsblock .leftsidedblock .miniblocks > div.tab {
+    width:33.333%;
   }
 }

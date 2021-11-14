@@ -1,3 +1,35 @@
+html, body, * {
+	font-family: Montserrat;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1196px;
+  margin: 0 auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+@media(max-width:1025px) {
+	.container {
+		padding-left:24px;
+		padding-right:24px;
+	}
+	
+}
+
+@media(max-width:768px) {
+	.container {
+		padding-left:12px;
+		padding-right:12px;
+	}
+}
+
+
+
+
+
 @import "menu.scss";
 @import "media.scss";
 @import "banner.scss";
@@ -7,13 +39,6 @@
 @import "logobanner.scss";
 @import "threerows.scss";
 @import "pricing.scss";
+@import "reviews.scss";
+@import "contacts.scss";
 
-.container {
-  display: flex;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding-left: 147px;
-  padding-right: 147px;
-
-}

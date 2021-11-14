@@ -9,13 +9,17 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 
-    .menuimg{
-      background-image: url("content/logo.svg");
-      width: 119.37px;
-      height: 52.06px;
+    .menuimg {
+       a {
+        display:inline-block;
+       }
+
+       img {
+        height:52px;
+       }
     }
 
 
@@ -35,23 +39,61 @@
 
 
               a {
-                color: #ffffff;
-                font-family: Montserrat;
-                  opacity: 0.69;
+                color: #a6a6a6;
                   text-decoration: none;
 
                   hr {
                     visibility: hidden;
                   }
-              }
-              .active:hover {
-                opacity: 1;
-                border-bottom: 3px solid #E27866;
-                padding-bottom: 30px;
 
+                  &:hover {
+                    opacity: 1;
+                    color:#fff;
+                    border-bottom: 3px solid #E27866;
+                    padding-bottom: 24px;
+                  }
               }
+              
         }
       }
     }
+  }
+}
+
+
+
+@media(max-width:768px) {
+  .top-menu-block  .navmenu{
+    position:absolute;
+    display:block;
+    width:100%;
+    left:0px;
+    right:0px;
+    top:72px;
+    background-color:white;
+    padding-top:24px;
+    padding-bottom:24px;
+    visibility:hidden;
+    height:0;
+    overflow:hidden;
+  }
+
+  .top-menu-block .top-menu .navmenu ul {
+    display:block;
+    width:100%;
+  }
+
+  .top-menu-block .top-menu .navmenu ul li {
+    padding-left:12px;
+    padding-right:12px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:center;
+  }
+
+  .top-menu-block .top-menu .navmenu ul li a:hover {
+    padding:0px;
+    border:0px;
+    color:black;
   }
 }

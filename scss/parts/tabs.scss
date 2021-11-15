@@ -1,10 +1,10 @@
 .tabsblock {
     background-image: linear-gradient(to bottom, #6696e287, #e2786680), url("content/tabner.png");
-  align-items: center;
-  display: flex;
-  background-size:cover;
-  background-repeat: no-repeat;
-      padding-top: 110px;
+    align-items: center;
+    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 110px;
     padding-bottom: 115px;
     overflow:hidden;
 
@@ -53,9 +53,9 @@
           }
         }
 
-        background-color:#A37169;
-        box-shadow: 4px 5px 9px 0px #00000012;
-        transition: 0.5s;
+          background-color:#A37169;
+          box-shadow: 4px 5px 9px 0px #00000012;
+          transition: 0.5s;
         &:hover {
           background-color:#E27866;
           box-shadow: 4px 5px 9px 0px #00000033;
@@ -106,7 +106,6 @@
 
     .headertext {
       font-size: 36px;
-      font-family: Montserrat;
       color: #FFFFFF;
       font-weight: 600;
     }
@@ -114,13 +113,15 @@
     .paragraph {
         padding-top: 33px;
         color: #FFFFFF;
-        font-family: Montserrat;
         font-size: 14px;
         font-weight: 300;
     }
 
     .texttabs {
-
+      display:none;
+      &.active {
+       display:block;
+      }
     }
   }
 
@@ -241,6 +242,12 @@
     margin-left:auto;
     margin-right:auto;
     display:flex;
+  }
+
+  .tabsblock .leftsidedblock  {
+    .headertext {
+      font-size: 32px;
+    }
   }
 
   .tabsblock .leftsidedblock, .tabsblock .rigthsidedblock {

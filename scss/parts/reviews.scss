@@ -22,6 +22,21 @@
     .container {
       align-items:end;
     }
+
+    .swiper-pagination-bullet {
+      background-color:white;
+      border:1px solid #E27866;
+      width:10px;
+      height:10px;
+      margin-left:10px;
+      margin-right:10px;
+      opacity:1;
+
+      &.swiper-pagination-bullet-active {
+        background-color:#E27866;
+      }
+    }
+
   }
 
   .firstbasic {
@@ -60,6 +75,7 @@
 
     .talks {
       padding-left: 18px;
+      text-align: left;
       h2{
         font-size: 20px;
       color: #333333;
@@ -111,11 +127,24 @@
   }
 
   .reviews-block .firstbasic {
-    padding-left:0px;
-    padding-right:0px;
-    max-width:360px;
+
+
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:20px;
+
+  }
+
+  .reviews-block {
+
+    .firstbasic .talks {
+
+      .talks {
+        text-align: left;
+      }
+
+    }
+    .reviews-items {
+      padding-bottom: 90px;
+    }
   }
 }

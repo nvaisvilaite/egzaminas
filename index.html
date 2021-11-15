@@ -2,366 +2,280 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <title>Egzaminas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="app/css/style.css">
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-
-
 <body>
-
-
- <!--<img src="app/css/content/render.png" style="position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    opacity: 0.7;
-    top: 705px;"/> -->
-  <!-- top menu -->
-  <div class="top-menu-block">
-    <div class="container">
-      <div class="top-menu">
-        <!-- logo -->
-        <div class="menuimg">
-          <a href=""><img src="app/css/content/logo.svg" alt="logo"/></a>
-        </div>
-        <!-- menu -->
-        <nav class="navmenu">
-          <ul>
-            <li><a href="#" class="active active1">Features</a></li>
-
-            <li><a href="#" class="active">About</a></li>
-
-            <li><a href="#" class="active">Pricing</a></li>
-
-            <li><a href="#" class="active">Reviews</a></li>
-
-            <li><a href="#" class="active">Contact</a></li>
-
-          </ul>
-
-
-
-        </nav>
+<!-- top menu -->
+<div class="top-menu-block">
+  <div class="container">
+    <div class="top-menu">
+      <div class="menuimg">
+        <a href=""><img src="app/css/content/logo.svg" alt="logo"/></a>
       </div>
-
+      <nav class="navmenu" id="nav-menu">
+        <ul>
+          <li><a href="#features" class="active active1">Features</a></li>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#pricing" class="active">Pricing</a></li>
+          <li><a href="#reviews" class="active">Reviews</a></li>
+          <li><a href="#contact" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <i class="fas fa-bars burger" id="burger"></i>
     </div>
   </div>
+</div>
+<!-- top menu end -->
+
+
 
   <!-- banner -->
   <div class="bannerblock">
-    <!-- banner img css  -->
     <div class="container">
       <div class="textblock">
-        <!-- logo -->
         <img src="app/css/content/bannerlogo.svg" class="extraLogo" alt="logo"/>
-
         <h1 class="bannerh">Explained propriety of out perpetual to you</h1>
-        <!-- line -->
         <div class="borderbanner"></div>
         <p class="bannerp">Insipidity the sufficient discretion imprudence resolution
         sir him decisiveli. Proceed how any engaged visitor. Explained propriety of
-      out pepretual his you. Feel sold off felt nay rose met you.
-    We so entreaties cultivated astonished is.</p>
-        <a class="button" href="#">
-          Download
-        </a>
+        out pepretual his you. Feel sold off felt nay rose met you.
+        We so entreaties cultivated astonished is.</p>
+        <a class="button" href="#">Download</a>
       </div>
+      <!-- Banner form -->
+      <div class="formside">
+        <div class="fullform">
+          <h1 class="fullformh">Try Your <span style="color: #e27866; font-style: Montserrat"> FREE</span> Trial Today</h2>
+            <form class="form" action="index.html" method="post" autocomplete="off" id="signup">
+              <div class="form-wrap">
+                  <h3 class=fullformh3>Your details</h3>
+                  <label for="fname"></label>
+                  <input type="text" name="name" value="" placeholder="First name">
 
-      <!-- form -->
-    <div class="formside">
-      <div class="fullform">
-        <h1 class="fullformh">Try Your <span style="color: #e27866; font-style: Montserrat"> FREE</span> Trial Today</h2>
-        <!-- simple form -->
-          <form class="form" action="index.html" method="post" autocomplete="off">
-            <div class="form-wrap">
-                <h3 class=fullformh3>Your details</h3>
-                <!-- name -->
-                <label for="fname"></label>
-                <input type="text" name="name" value="" placeholder="First name">
-                <!-- surname -->
-                <label for="fname"></label>
-                <input type="text" name="name" value="" placeholder="Last name">
-                <!-- email -->
-                <label for="fname"></label>
-                <input type="text" name="name" value="" placeholder="Phone number">
+                  <label for="fname"></label>
+                  <input type="text" name="name" value="" placeholder="Last name">
 
-                <!-- radio form -->
-                <h3 class="typing">Type of subscription</h3>
-                <div class="bottomform">
+                  <label for="fname"></label>
+                  <input type="text" name="name" value="" placeholder="Phone number">
 
-                  <div class="custom-radio">
-                    <input id="monthly"type="radio" name="subscription" value="monthly" checked>
-                    <label for="monthly">
-                        <div class="check"></div>
-                        <span>Monthly</span>
-                    </label>
+
+                  <h3 class="typing">Type of subscription</h3>
+                  <div class="bottomform">
+
+                    <div class="custom-radio">
+                      <input id="monthly"type="radio" name="subscription" value="monthly" checked required>
+                      <label for="monthly">
+                          <div class="check"></div>
+                          <span>Monthly</span>
+                      </label>
+                    </div>
+                    <div class="custom-radio">
+                      <input id="yearly"type="radio" name="subscription" value="yearly" required>
+                      <label for="yearly">
+                          <div class="check"></div>
+                          <span>Yearly</span>
+                      </label>
+                    </div>
                   </div>
-
-                  <div class="custom-radio">
-                    <input id="yearly"type="radio" name="subscription" value="yearly">
-                    <label for="yearly">
-                        <div class="check"></div>
-                        <span>Yearly</span>
-                    </label>
-                  </div>
-                </div>
-
-            </div>
-
-            <!-- get started button -->
-            <button type="submit" class="getstartedbtn" data-id="get-started">
-              Get started
-            </button>
-          </form>
-      </div>
-    </div>
-
-    </div>
-  </div>
-
-  <!-- social media block -->
-
-  <div class="smblock">
-    <div class="container">
-      <div class="smtext">
-        <h2 class="social">Social media</h2>
-        <p class="socialp">Lorem ipsum dolor sit amet, consectuter adipiscing elit. Aenean
-         euismod bibendum laoreet.</p>
-      </div>
-
-      <!-- icons block -->
-      <div class="iconsblock">
-        <a href=""><i class="iconf icon"></i></a>
-        <a href=""><i class="iconi icon"></i></a>
-        <a href=""><i class="icont icon"></i></a>
-        <a href=""><i class="iconp icon"></i></a>
-        <a href=""><i class="iconp icon"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Tabs block -->
-  <div class="tabsblock">
-    <div class="container">
-
-        <div class="leftsidedblock">
-          <div class="miniblocks">
-            <div class="registerb tab active"><p class="turned">Register</p></div>
-            <div class="applyb tab"><p class="turned">Apply</p></div>
-            <div class="receiveb tab"><p class="turned">Receive</p></div>
-          </div>
-          <div class="texttabs">
-            <h1 class="headertext tab">Tabs with soft transitioning
-            effect. Explained propriety of out perpetual his you.</h1>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-            <p class="paragraph p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenean euismod bibendum laoreet.</p>
-          </div>
-
+              </div>
+              <button type="submit" class="getstartedbtn" id="get-started">Get started</button>
+            </form>
         </div>
-        <!-- right side block -->
-        <div class="rigthsidedblock">
-          <div class="threeimg">
+      </div>
+    </div>
+  </div>
+<!-- banner end -->
 
-            <div class="topimg">
-              <div class="img first">
-                <div class="layer">
-                  <p class="word">explore</p>
-                </div>
-              </div>
-              <div class="img second">
-                <div class="layer">
-                  <p class="word">explore</p>
-                </div>
-              </div>
-            </div>
-            <div class="bottomimg">
-              <div class="img third">
-                <div class="layer">
-                  <p class="word">explore</p>
-                </div>
-              </div>
-            </div>
+<!-- social media block -->
+<div class="smblock">
+  <div class="container">
+    <div class="smtext">
+      <h2 class="social">Social media</h2>
+      <p class="socialp">Lorem ipsum dolor sit amet, consectuter adipiscing elit. Aenean
+       euismod bibendum laoreet.</p>
+    </div>
 
-          </div>
+    <div class="iconsblock">
+      <a href=""><i class="iconf icon"></i></a>
+      <a href=""><i class="iconi icon"></i></a>
+      <a href=""><i class="icont icon"></i></a>
+      <a href=""><i class="iconp icon"></i></a>
+      <a href=""><i class="iconp icon"></i></a>
+    </div>
+  </div>
+</div>
+<!-- social media end -->
+
+<!-- Tabs block -->
+<div class="tabsblock" id="features">
+  <div class="container">
+      <div class="leftsidedblock">
+        <div class="miniblocks">
+          <div class="registerb tab active" data-id="1"><p class="turned">Register</p></div>
+          <div class="applyb tab" data-id="2"><p class="turned">Apply</p></div>
+          <div class="receiveb tab" data-id="3"><p class="turned">Receive</p></div>
+        </div>
+        <div class="texttabs active">
+          <h1 class="headertext">1Tabs with soft transitioning
+          effect. Explained propriety of out perpetual his you.</h1>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <p class="paragraph p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Aenean euismod bibendum laoreet.</p>
+        </div>
+        <div class="texttabs">
+          <h1 class="headertext">2Tabs with soft transitioning
+          effect. Explained propriety of out perpetual his you.</h1>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <p class="paragraph p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Aenean euismod bibendum laoreet.</p>
+        </div>
+        <div class="texttabs">
+          <h1 class="headertext">3Tabs with soft transitioning
+          effect. Explained propriety of out perpetual his you.</h1>
+          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+          <p class="paragraph p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Aenean euismod bibendum laoreet.</p>
         </div>
 
+      </div>
+      <!-- right side block -->
+      <div class="rigthsidedblock">
+        <div class="threeimg">
 
-    </div>
+          <div class="topimg">
+            <div class="img first">
+              <div class="layer">
+                <p class="word">explore</p>
+              </div>
+            </div>
+            <div class="img second">
+              <div class="layer">
+                <p class="word">explore</p>
+              </div>
+            </div>
+          </div>
+          <div class="bottomimg">
+            <div class="img third">
+              <div class="layer">
+                <p class="word">explore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
+</div>
+<!-- tabs block end -->
 
   <!-- logo and text block in black -->
-  <div class="logoblock">
-    <div class="container">
-
-      <div class="logobottom"></div>
-
-
-      <div class="text">
-        <h1 class="headingtext">Erat tempor tempus erat malesuada</h1>
-        <div class="borderafter">
-
+<div class="logoblock" id="about">
+  <div class="container">
+    <div class="logobottom"></div>
+    <div class="text">
+      <h1 class="headingtext">Erat tempor tempus erat malesuada</h1>
+      <div class="borderafter"></div>
+      <p class="texty">Lorem impus dolor sit amet, consectuter adipiscing elit. Aenean
+          euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
+          commodo.</p>
+      <div class="textwithimg">
+        <div class="first firstext">
+          <div class="imgstextf">
+            <div class="boxborder">
+              <i class="far fa-comment"></i>
+            </div>
+          </div>
+          <div class="righttext">
+            <h5>Title</h5>
+            <p class="icontext one">Lorem impus dolor sit amet, consectuter adipiscing elit. Aenean
+            euismod bibendum laoreet</p>
+          </div>
         </div>
-
-        <p class="texty">Lorem impus dolor sit amet, consectuter adipiscing elit. Aenean
-        euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
-      commodo.</p>
-
-        <div class="textwithimg">
-          <div class="first firstext">
-            <div class="imgstextf">
-              <div class="boxborder">
-                <i class="far fa-comment"></i>
-              </div>
+        <div class="first secondtext">
+          <div class="imgstextf">
+            <div class="boxborder">
+              <i class="far fa-eye"></i>
             </div>
-            <div class="righttext">
-              <h5>Title</h5>
-              <p class="icontext one">Lorem impus dolor sit amet, consectuter adipiscing elit. Aenean
-              euismod bibendum laoreet</p>
-            </div>
-
           </div>
-
-          <div class="first secondtext">
-            <div class="imgstextf">
-              <div class="boxborder">
-                <i class="far fa-eye"></i>
-              </div>
-            </div>
-            <div class="righttext">
-              <h5>Title</h5>
-              <p class="icontext two">Lorem impus dolor sit amet, consectuter adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
-              commodo.</p>
-            </div>
-
+          <div class="righttext">
+            <h5>Title</h5>
+            <p class="icontext two">Lorem impus dolor sit amet, consectuter adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo
+            commodo.</p>
           </div>
-
         </div>
       </div>
     </div>
   </div>
+</div>
+<!-- logo and text block in black end -->
 
 <!-- rows block -->
-  <div class="all">
-    <div class="container">
-      <div class="headingfull">
-        <h2>WHY THIS IS AWESOME</h2>
-        <div class="headlineborder"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-
-    <div class="container full">
-      <div class="people">
-        <div class="person">
-          <div class="borderfirst">
-            <i class="fas fa-medal"></i>
-          </div>
-          <div class="texty">
-            <h2>Thoughtful Design</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum laoreet.</p>
-          </div>
-        </div>
-
-        <div class="person">
-          <div class="borderfirst">
-            <i class="fas fa-leaf"></i>
-          </div>
-          <div class="texty">
-            <h2>Well Crafted</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.</p>
-          </div>
-        </div>
-
-        <div class="person">
-          <div class="borderfirst">
-            <i class="fab fa-cc-visa"></i>
-          </div>
-          <div class="texty">
-            <h2>Easy to Customize</h2>
-            <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- pricing -->
-  <div class="pricing">
+<div class="all">
+  <div class="container">
     <div class="headingfull">
-      <h2>PRICING OPTIONS</h2>
+      <h2>WHY THIS IS AWESOME</h2>
       <div class="headlineborder"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div class="container">
+  </div>
+  <div class="container full">
+    <div class="people">
+      <div class="person">
+        <div class="borderfirst">
+          <i class="fas fa-medal"></i>
+        </div>
+        <div class="texty">
+          <h2>Thoughtful Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod ibendum laoreet.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="borderfirst">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="texty">
+          <h2>Well Crafted</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean euismod bibendum.</p>
+        </div>
+      </div>
+      <div class="person">
+        <div class="borderfirst">
+          <i class="fab fa-cc-visa"></i>
+        </div>
+        <div class="texty">
+          <h2>Easy to Customize</h2>
+          <p>Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- rows block end -->
 
-          <div class="pricelist">
-            <div class="firstbasic first">
-              <div class="content">
-                <div class="basichead">
-                  <h3>Basic</h3>
+<!-- pricing -->
+<div class="pricing" id="pricing">
+  <div class="headingfull">
+    <h2>PRICING OPTIONS</h2>
+    <div class="headlineborder"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="container">
+        <div class="pricelist">
+          <div class="firstbasic first">
+            <div class="content">
+              <div class="basichead">
+                <h3>Basic</h3>
                   <div class="pricetag">
                     <h2>$</h2>
                     <h1>0</h1>
                   </div>
-                  <p>Free for life</p>
-
-                </div>
-
-                <div class="basicborder"></div>
-                <div class="basiclist">
-                  <p>1 gb of space</p>
-                  <p>1 gb of space</p>
-                  <p>10 gb of bandwidth</p>
-                  <p>3 websites</p>
-                  <p>basic customization</p>
-                  <p>wordpress integration</p>
-                  <p>email support</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="firstbasic first">
-              <div class="content">
-              <div class="basichead">
-                <h3>Profesional</h3>
-                <div class="pricetag">
-                  <h2>$</h2>
-                  <h1>19</h1>
-                </div>
-                <p>Monthly payment</p>
-
-              </div>
-              <div class="basiclist">
-                  <p class="colored">1 gb of space</p>
-                  <p>1 gb of space</p>
-                  <p>1 gb of space</p>
-                  <p>10 gb of bandwidth</p>
-                  <p>3 websites</p>
-                  <p>basic customization</p>
-                  <p>wordpress integration</p>
-                  <p>email support</p>
-
-              </div>
-              </div>
-            </div>
-
-            <div class="firstbasic first">
-              <div class="content">
-              <div class="basichead">
-                <h3>Enterprise</h3>
-                <div class="pricetag">
-                  <h2>$</h2>
-                  <h1>70</h1>
-                </div>
-                <p>Monthly payment</p>
-
+                <p>Free for life</p>
               </div>
               <div class="basicborder"></div>
               <div class="basiclist">
@@ -374,77 +288,117 @@
                 <p>email support</p>
               </div>
             </div>
+          </div>
+          <div class="firstbasic first">
+            <div class="content">
+            <div class="basichead">
+              <h3>Profesional</h3>
+                <div class="pricetag">
+                  <h2>$</h2>
+                  <h1>19</h1>
+                </div>
+              <p>Monthly payment</p>
+            </div>
+              <div class="basiclist">
+                  <p class="colored">1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>1 gb of space</p>
+                  <p>10 gb of bandwidth</p>
+                  <p>3 websites</p>
+                  <p>basic customization</p>
+                  <p>wordpress integration</p>
+                  <p>email support</p>
+              </div>
             </div>
           </div>
+      <div class="firstbasic first">
+        <div class="content">
+        <div class="basichead">
+          <h3>Enterprise</h3>
+          <div class="pricetag">
+            <h2>$</h2>
+            <h1>70</h1>
+          </div>
+          <p>Monthly payment</p>
+        </div>
+        <div class="basicborder"></div>
+          <div class="basiclist">
+            <p>1 gb of space</p>
+            <p>1 gb of space</p>
+            <p>10 gb of bandwidth</p>
+            <p>3 websites</p>
+            <p>basic customization</p>
+            <p>wordpress integration</p>
+            <p>email support</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<!-- Pricing end -->
 
 <!-- reviews block -->
-<div class="reviews-block">
-
+<div class="reviews-block" id="reviews">
   <div class="container">
     <div class="headingfull reviews">
       <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
       <div class="blue"></div>
     </div>
   </div>
-
-  <div class="reviews-items">
-      <div class="container">
-
-
-        <div class="firstbasic first">
+  <div class="reviews-items container swiper">
+      <div class="swiper-wrapper">
+        <div class="firstbasic first swiper-slide">
             <div class="firsttext">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
             </div>
-            <div class="custombox"></div>
-            <div class="bottomrev">
-              <div class="imgjer">
+              <div class="custombox"></div>
+                <div class="bottomrev">
+                  <div class="imgjer">
+                  </div>
+                  <div class="talks">
+                    <h2>Jeremy H.</h2>
+                    <p>Manager</p>
+                  </div>
+                </div>
+            </div>
+              <div class="firstbasic first swiper-slide">
+                  <div class="firsttext">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+                  </div>
+                  <div class="custombox"></div>
+                  <div class="bottomrev">
+                    <div class="imgjer">
+                    </div>
+                      <div class="talks">
+                        <h2>Jeremy H.</h2>
+                        <p>Manager</p>
+                      </div>
+                  </div>
               </div>
-              <div class="talks">
-                <h2>Jeremy H.</h2>
-                <p>Manager</p>
-              </div>
+            <div class="firstbasic first swiper-slide">
+                <div class="firsttext">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                </div>
+                <div class="custombox"></div>
+                <div class="bottomrev">
+                  <div class="imgjer">
+                  </div>
+                    <div class="talks">
+                      <h2>Jeremy H.</h2>
+                      <p>Manager</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="firstbasic first">
-            <div class="firsttext">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
-            </div>
-            <div class="custombox"></div>
-            <div class="bottomrev">
-              <div class="imgjer">
-              </div>
-              <div class="talks">
-                <h2>Jeremy H.</h2>
-                <p>Manager</p>
-              </div>
-            </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="firstbasic first">
-            <div class="firsttext">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
-            </div>
-            <div class="custombox"></div>
-            <div class="bottomrev">
-              <div class="imgjer">
-              </div>
-              <div class="talks">
-                <h2>Jeremy H.</h2>
-                <p>Manager</p>
-              </div>
-            </div>
-        </div>
-
-    </div>
-  </div>
-
 </div>
-
+<!-- reviews end -->
 
 
 <!-- contacts block -->
-<div class="contacts bannerblock">
+<div class="contacts bannerblock" id="contact">
   <div class="container">
     <div class="contactheading">
       <h1>Contant us</h1>
@@ -453,31 +407,19 @@
       </div>
     </div>
   </div>
-
   <div class="container">
-
-
     <div class="formside">
       <div class="fullform">
-
-        <!-- simple form -->
-          <form class="form" action="index.html" method="post" autocomplete="off">
+          <form class="form" action="index.html" method="post" autocomplete="off" id="contacts">
             <div class="form-wrap">
 
-                <!-- name -->
                 <label for="fname"></label>
                 <input type="text" name="name" value="" placeholder="First name">
-                <!-- surname -->
                 <label for="fname"></label>
                 <input type="text" name="name" value="" placeholder="Last name">
-                <!-- email -->
                 <label for="fname"></label>
                 <input type="text" name="name" value="" placeholder="Phone number">
-
-                <!-- radio form -->
-
                 <div class="bottomform">
-
                   <div class="custom-radio">
                     <input id="person"type="radio" name="subscription" value="person" checked>
                     <label for="person">
@@ -485,7 +427,6 @@
                         <span>Person</span>
                     </label>
                   </div>
-
                   <div class="custom-radio">
                     <input id="company"type="radio" name="subscription" value="company">
                     <label for="company">
@@ -494,29 +435,18 @@
                     </label>
                   </div>
                 </div>
-
-            </div>
-
-            <!-- get started button -->
-            <button type="submit" class="getstartedbtn" data-id="send">
-              Send
-            </button>
+              </div>
+            <button type="submit" class="getstartedbtn" data-id="send">Send</button>
           </form>
       </div>
     </div>
-
-
-
-
   </div>
-
-
 </div>
+<!-- contacts end -->
 
 <!-- footer -->
 <div class="smblock footer">
     <div class="container">
-       <!-- icons block -->
       <div class="iconsblock">
         <a href=""><i class="iconf icon"></i></a>
         <a href=""><i class="iconi icon"></i></a>
@@ -524,29 +454,13 @@
         <a href=""><i class="iconp icon"></i></a>
         <a href=""><i class="iconp icon"></i></a>
       </div>
-
       <div class="smtext">
         <p class="socialp">© 2019 Cheshire County</p>
       </div>
-
-
-    </div>
   </div>
-
-
-
-
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-
-
-<script>
-  new Splide( '.splide' ).mount();
-</script>
-
+</div>
+<!-- footer end -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

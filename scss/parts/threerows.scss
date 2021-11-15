@@ -1,26 +1,24 @@
 .all {
   background: #FFFFFF;
   padding-top: 99px;
-padding-bottom: 122px;
+  padding-bottom: 122px;
 
     .headingfull {
       text-align: center;
       margin-left:auto;
       margin-right:auto;
       display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
     h2 {
       font-size: 32px;
-    line-height: 43px;
-    color: #212121;
-    font-family: Montserrat;
+      line-height: 43px;
+      color: #212121;
     }
 
     p {
-        font-family: Montserrat;
         font-size: 14px;
         line-height: 20px;
         color: #86878B;
@@ -35,11 +33,11 @@ padding-bottom: 122px;
     }
 
     .people {
-      display: flex;
+        display: flex;
         justify-content: center;
 
         .person {
-          display: flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -58,18 +56,12 @@ padding-bottom: 122px;
                 color: #E27866;
                 padding: 15px;
               }
-
-              .leave {
-
-              }
-
             }
 
           .texty {
             text-align: center;
             padding-top: 35px;
             margin-bottom:auto;
-            font-family: Montserrat;
               h2 {
                 font-size: 20px;
                 line-height: 20px;
@@ -79,7 +71,7 @@ padding-bottom: 122px;
                 font-size: 14px;
                 color: #86878B;
                 line-height: 20px;
-              margin-top: 27px;
+                margin-top: 27px;
 
 
               }
@@ -89,23 +81,31 @@ padding-bottom: 122px;
 
         .full {
           padding-top: 99px;
-    
+
         }
     }
 
 
-
+// media
 @media(max-width:768px) {
   .all {
     padding-top:50px;
     padding-bottom:50px;
+
+    .full {
+      padding-top: 40px;
+    }
   }
-  
+
   .all .people {
     flex-direction:column;
   }
 
   .all .people .person {
     width:100%;
+  }
+
+  .texty {
+    padding-bottom: 40px;
   }
 }
